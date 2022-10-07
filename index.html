@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Make The Best Team</title>
+  
+  <!-- Tailwind css -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <!-- header section -->
+  <header class="bg-slate-700 flex">
+    <div class="w-2/5">
+      <img src="images/maymer1-removebg-preview.png" alt="">
+    </div>
+    <div class="text-center w-9/12 mr-20 mt-10 py-3 text-white">
+      <h1 class="mb-4 text-4xl font-extrabold italic text-orange-500">Select Your Best Five</h1>
+      <p class="text-1xl font-normal">
+        Select the five players according to your budget and make the world best team
+      </p>
+    </div>
+  </header>
+
+  <!-- main section is started here -->
+  <main class="bg-slate-900">
+    <br>
+    <br>
+    <div class="grid grid-cols-4 gap-4 w-11/12 mx-auto text-center text-white">
+      <!-- player-1 -->
+      <div class="border border-gray-400 pb-10">
+        <img src="images/maymer1.jpg" alt="this is an image">
+        <h5 class="player-name">Neymar Jr</h5>
+        <button enable id="player1-btn" class="bg-blue-500 font-semibold px-6 mt-2 btn">Select</button>  
+      </div>
+      
+      <!-- player2 -->
+      <div class="border border-gray-400 pb-10">
+        <img src="images/messi.jpg" alt="this is an image">
+        <h5 class="player-name">Lionel Messi</h5>
+        <button id="player2-btn" class="bg-blue-500 font-semibold px-6 mt-2 btn">Select</button>  
+      </div>
+      <!-- player-3 -->
+      <div class="border border-gray-400 pb-10">
+        <img src="images/naru.jpg" alt="this is an image">
+        <h5 class="player-name">Kylian Mbappe</h5>
+        <button id="player3-btn" class="bg-blue-500 font-semibold px-6 mt-2 btn">Select</button>  
+      </div>
+      
+      <!-- card-1 -->
+      <div id="card1" class="bg-black pb-10">
+        <br>
+        <h2 class="text-2xl font-semibold">Selected-V</h2>
+         
+      </div>
+      
+      <!-- player-4 -->
+      <div class="border border-gray-400 pb-10">
+        <img src="images/player4.jpg" alt="this is an image">
+        <h5 class="player-name">Rafinha</h5>
+        <button id="player4-btn" class="bg-blue-500 font-semibold px-6 mt-2 btn">Select</button>  
+      </div>
+      
+      <!-- player-5 -->
+      <div class="border border-gray-400 pb-10">
+        <img src="images/naru3.jpg" alt="this is an image">
+        <h5 class="player-name">Cristiano Ronaldo</h5>
+        <button id="player5-btn" class="bg-blue-500 font-semibold px-6 mt-2 btn">Select</button>  
+      </div>
+      
+      <!-- player6 -->
+      <div class="border border-gray-400 pb-10">
+        <img src="images/p-6.jpg" alt="this is an image">
+        <h5 class="player-name">Robert Lewandowski</h5>
+        <button id="player6-btn" class="bg-blue-500 font-semibold px-6 mt-2 btn">Select</button>  
+      </div>
+      
+      <!-- card-2 design -->
+      <div class="bg-black pb-10">
+        <br>
+        <h2 class="text-2xl font-semibold">Budget</h2>
+        <br>
+        <div class="grid mx-auto px-8 gap-1">
+          <label for="per player">per player :<input type="text" class="bg-black border border-slate-50 ml-3 py-1 w-4/12"></label>
+          <button class="bg-blue-500 font-semibold py-1 px-6 mt-2 block">Calculate</button>
+
+          <h5>Player Expenses: $<span></span></h5>
+          <label for="per player">Manager :<input type="text" class="bg-black border border-slate-50 ml-3 py-1 w-4/12"></label>
+          <label for="per player">Coach :<input type="text" class="bg-black border border-slate-50 ml-6 py-1 w-4/12"></label>
+          <button class="bg-blue-500 font-semibold py-1 px-6 mt-2 block">Calculate</button>
+          <div>
+            <h3>Total: $ <span></span></h3>
+          </div>
+        </div>
+         
+      </div>
+
+      <!-- player7 -->
+      <div class="border border-gray-400 pb-10">
+        <img src="images/benzema.jpg" alt="this is an image">
+        <h5 class="player-name">Karim Benzema</h5>
+        <button id="player7-btn" class="bg-blue-500 font-semibold px-6 mt-2 btn">Select</button>  
+      </div>
+
+    </div>
+
+    
+
+    <footer class="mt-28 ">
+      <p class="text-center text-white">Copyright @ 2022 Md Sajadul Islam Dipu</p>
+    </footer>
+    <br>
+  </main>
+  <!-- cusmization tailwind class property script -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- External app.js file is linked -->
+  <script src="js/app.js"></script>
+</body>
+</html>
